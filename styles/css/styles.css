@@ -191,26 +191,33 @@ nav {
 
 .recentTitle {
   margin: 0 18px 0 18px;
-  height: 500px;
-  background: url("https://goo.gl/alXVtc");
+  height: 400px;
+  background: #2F3E46;
   display: flex;
   justify-content: center;
   align-items: center;
   background-attachment: fixed;
-  padding: 0; }
-  .recentTitle #recentOverlay {
+  padding: 0;
+  border-top: 5px solid #f4f4f4;
+  border-bottom: 5px solid #f4f4f4;
+  color: white;
+  position: relative; }
+  .recentTitle h1 {
     color: white;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin-bottom: 60px;
+    border-top: 2px dashed white;
+    border-bottom: 2px dashed white;
+    padding: 20px; }
+  .recentTitle .fa {
+    position: absolute;
     text-align: center;
-    width: 100%;
-    height: 100%;
-    background: black;
-    opacity: .6;
-    padding: 0; }
-    .recentTitle #recentOverlay h1 {
-      font-size: 110px;
-      font-weight: bold;
-      letter-spacing: 5px;
-      margin-top: 150px; }
+    font-size: 45px;
+    bottom: 10px;
+    left: 0;
+    right: 0; }
 
 .articles {
   background: grey;
