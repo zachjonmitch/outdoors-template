@@ -6,7 +6,7 @@ $(document).ready(function() {
             $('#textRight').css({'background': '#52796F', 'margin': '0', 'bottom': '19%'});
             $('#textLeft').css('display', 'none');
             $('.brandLeft').css('display', 'block');
-            $('#menuRight').css('display', 'block');
+            $('.menu').css('display', 'block');
 
             $('#iconsLeft li').css('margin', '0 0 17px 0');
             $('#iconsLeft li:first-child').css({'background': 'hsl(221, 44%, 41%)'});
@@ -20,7 +20,7 @@ $(document).ready(function() {
             $('#textRight').css({'background': 'none', 'margin': '0 20px 0 0', 'bottom': '23%'});
             $('#textLeft').css('display', 'block');
             $('.brandLeft').css('display', 'none');
-            $('#menuRight').css('display', 'none');
+            $('.menu').css('display', 'none');
 
             $('#iconsLeft li').css('margin', '0 0 30px 9px');
             $('#iconsLeft li:first-child').css({'background': 'none'});
@@ -33,17 +33,40 @@ $(document).ready(function() {
         }
     });
 
-    $('.articles').on('mouseenter', function() {
+    $('#about').hover(function() {
+        $(this).text('ABOUT').css('width', '80px');
+    }, function() {
+        $(this).text('A').css('width', '41px');
+    });
+
+    $('#stories').hover(function() {
+        $(this).text('STORIES').css('width', '90px');
+    }, function() {
+        $(this).text('S').css('width', '41px');
+    });
+
+    $('#volumes').hover(function() {
+        $(this).text('VOLUMES').css('width', '100px');
+    }, function() {
+        $(this).text('V').css('width', '41px');
+    });
+
+    $('#contribute').hover(function() {
+        $(this).text('CONTRIBUTE').css('width', '120px');
+    }, function() {
+        $(this).text('C').css('width', '41px');
+    });
+
+
+    $('.articles').hover(function() {
         $(this).find('h1, h2').css('display', 'block').addClass('animated flipInX');
         $(this).find('.overlay').css('opacity', '.8');
 
         $(this).find('h1, h2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
             $(this).removeClass('animated flipInX');
         });
-    });
-
-    $('.articles').on('mouseleave', function() {
+    }, function() {
         $(this).find('.overlay').css('opacity', '.2');
         $(this).find('h1, h2').css('display', 'none');
-    })
+    });
 });

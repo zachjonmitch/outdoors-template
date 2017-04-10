@@ -186,23 +186,32 @@ nav {
   }
 }
 
-#menuRight {
-  position: fixed;
-  right: 18px;
-  top: 70px;
-  display: none;
-  ul {
-    list-style: none;
-  }
-  li {
+ .menu {
+    position: fixed;
+    right: 18px;
+    top: 70px;
+    width: 41px;
     padding: 6px 16px;
     font-size: 18px;
     font-weight: bold;
     opacity: .9;
     background: $light-green-primary;
     margin: 3px 0;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease-in-out;
   }
-}
+
+  #stories {
+    top: 110px;
+  }
+  #volumes {
+    top: 150px;
+  }
+  #contribute {
+    top: 190px;
+  }
 
 #textRight {
   position: fixed;
