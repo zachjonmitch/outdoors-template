@@ -166,7 +166,7 @@ nav {
       letter-spacing: .1em;
       margin: 0 auto;
       @include bp-xlg {
-        font-size: 200px;
+        font-size: 170px;
       }
     }
   }
@@ -341,7 +341,7 @@ nav {
     padding-bottom: 20px;
     color: $dark-teal-primary;
     @include bp-xlg {
-      font-size: 80px;
+      font-size: 60px;
       margin-top: 50px;
     }
   }
@@ -351,7 +351,7 @@ nav {
     margin: 0 auto;
     padding-bottom: 30px;
     @include bp-xlg {
-      font-size: 39px;
+      font-size: 26px;
       margin-bottom: 50px;
     }
   }
@@ -386,7 +386,7 @@ nav {
     letter-spacing: .1em;
     color: $dark-teal-primary;
     @include bp-xlg {
-      font-size: 110px;
+      font-size: 90px;
       width: 70%;
       margin-top: 75px;
       margin-bottom: 65px;
@@ -403,8 +403,9 @@ nav {
     font-size: 25px;
     color: $dark-grey-accent;
     @include bp-xlg {
-      font-size: 40px;
+      font-size: 38px;
       margin-top: 50px;
+      width: 90%;
     }
   }
 }
@@ -435,7 +436,7 @@ nav {
     border-bottom: 2px dashed white;
     padding: 20px;
     @include bp-xlg {
-      font-size: 90px;
+      font-size: 70px;
     }
   }
   .fa {
@@ -513,14 +514,14 @@ nav {
     color: $dark-teal-primary;
     @include bp-xlg {
       margin-top: 150px;
-      font-size: 90px;
+      font-size: 70px;
     }
   }
   h3 {
     text-align: center;
     margin-bottom: 40px;
     @include bp-xlg {
-      font-size: 38px;
+      font-size: 27px;
     }
   }
   input {
@@ -563,7 +564,7 @@ footer {
     color: white;
     .footerBrand {
       float: left;
-      padding: 60px 30px 110px 150px;
+      padding: 60px 30px 110px 130px;
       @include bp-xlg {
         padding: 100px 30px 150px 300px;
       }
