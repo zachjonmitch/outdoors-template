@@ -77,6 +77,7 @@ body, html {
 nav {
   position: fixed;
   top: 0;
+  z-index: 100;
   ul {
     list-style: none;
     margin-top: 45px;
@@ -105,8 +106,8 @@ nav {
     @include transition(all 0.3s ease-in-out);
     @include bp-xlg {
       padding: 0;
-      width: 125px;
-      height: 75px;
+      width: 130px;
+      height: 65px;
     }
     @include bp-md {
       display: none !important;
@@ -182,7 +183,7 @@ nav {
   padding: 15px;
   background: $light-green-primary;
   display: none;
-  z-index: 100;
+  z-index: 1000 !important;
 }
 
 #textLeft {
@@ -191,7 +192,7 @@ nav {
   top: 210px;
   letter-spacing: .3em;
   transform-origin: 45px;
-  z-index: 100;
+  z-index: 1000 !important;
   @include rotate(-90deg);
   @include bp-sm {
       transform-origin: 0;
@@ -207,7 +208,7 @@ nav {
   left: 18px;
   bottom: 44px;
   font-size: 20px;
-  z-index: 100;
+  z-index: 1000 !important;
   @include bp-xlg {
     bottom: 84px;
   }
@@ -255,18 +256,21 @@ nav {
     text-align: center;
     cursor: pointer;
     display: none;
-    z-index: 100;
+    z-index: 1000 !important;
     @include transition(all 0.3s ease-in-out);
   }
 
   #stories {
     top: 110px;
+    z-index: 1000 !important;
   }
   #volumes {
     top: 150px;
+    z-index: 1000 !important;
   }
   #contribute {
     top: 190px;
+    z-index: 1000 !important;
   }
 
 #textRight {
@@ -279,7 +283,7 @@ nav {
   padding-left: 5px;
   padding-right: 5px;
   margin: 0 20px 0 0;
-  z-index: 100;
+  z-index: 1000 !important;
   @include transition(all 0.7s ease-in-out);
   @include rotate(90deg);
   @include bp-sm {
@@ -346,8 +350,8 @@ nav {
     @include bp-xlg {
       font-size: 75px;
       width: 70%;
-      margin-bottom: 40px;
-      margin-top: 80px;
+      margin-bottom: 45px;
+      margin-top: 85px;
     }
   }
   hr {
@@ -362,7 +366,7 @@ nav {
     color: $dark-grey-accent;
     @include bp-xlg {
       font-size: 27px;
-      margin-top: 25px;
+      margin-top: 30px;
       width: 90%;
     }
   }
@@ -511,6 +515,9 @@ footer {
       font-size: 17px;
       text-align: left;
       padding: 60px;
+      @include bp-xlg {
+        padding-left: 80px;
+      }
       li {
         list-style: none;
         color: $subtitles-grey;

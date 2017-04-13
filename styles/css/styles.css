@@ -19,7 +19,8 @@ body, html {
 
 nav {
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 100; }
   nav ul {
     list-style: none;
     margin-top: 45px; }
@@ -50,8 +51,8 @@ nav {
     @media only screen and (min-width: 1920px) {
       nav .buttonTop {
         padding: 0;
-        width: 125px;
-        height: 75px; } }
+        width: 130px;
+        height: 65px; } }
     @media only screen and (max-width: 1024px) {
       nav .buttonTop {
         display: none !important; } }
@@ -120,7 +121,7 @@ nav {
   padding: 15px;
   background: #52796F;
   display: none;
-  z-index: 100; }
+  z-index: 1000 !important; }
 
 #textLeft {
   position: fixed;
@@ -128,7 +129,7 @@ nav {
   top: 210px;
   letter-spacing: .3em;
   transform-origin: 45px;
-  z-index: 100;
+  z-index: 1000 !important;
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg); }
@@ -147,7 +148,7 @@ nav {
   left: 18px;
   bottom: 44px;
   font-size: 20px;
-  z-index: 100; }
+  z-index: 1000 !important; }
   @media only screen and (min-width: 1920px) {
     #iconsLeft {
       bottom: 84px; } }
@@ -192,7 +193,7 @@ nav {
   text-align: center;
   cursor: pointer;
   display: none;
-  z-index: 100;
+  z-index: 1000 !important;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -200,13 +201,16 @@ nav {
   transition: all 0.3s ease-in-out; }
 
 #stories {
-  top: 110px; }
+  top: 110px;
+  z-index: 1000 !important; }
 
 #volumes {
-  top: 150px; }
+  top: 150px;
+  z-index: 1000 !important; }
 
 #contribute {
-  top: 190px; }
+  top: 190px;
+  z-index: 1000 !important; }
 
 #textRight {
   position: fixed;
@@ -218,7 +222,7 @@ nav {
   padding-left: 5px;
   padding-right: 5px;
   margin: 0 20px 0 0;
-  z-index: 100;
+  z-index: 1000 !important;
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
   -ms-transition: all 0.7s ease-in-out;
@@ -284,8 +288,8 @@ nav {
       #fourSquareWrap h1 {
         font-size: 75px;
         width: 70%;
-        margin-bottom: 40px;
-        margin-top: 80px; } }
+        margin-bottom: 45px;
+        margin-top: 85px; } }
   #fourSquareWrap hr {
     border-top: 3px solid dimgrey;
     width: 72%; }
@@ -298,7 +302,7 @@ nav {
     @media only screen and (min-width: 1920px) {
       #fourSquareWrap p {
         font-size: 27px;
-        margin-top: 25px;
+        margin-top: 30px;
         width: 90%; } }
 
 .recentTitle {
@@ -436,6 +440,9 @@ footer {
     font-size: 17px;
     text-align: left;
     padding: 60px; }
+    @media only screen and (min-width: 1920px) {
+      footer .footerMenu {
+        padding-left: 80px; } }
     footer .footerMenu li {
       list-style: none;
       color: #cecece; }
