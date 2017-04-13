@@ -20,7 +20,7 @@ body, html {
 nav {
   position: fixed;
   top: 0;
-  z-index: 1000; }
+  z-index: 100 !important; }
   nav ul {
     list-style: none;
     margin-top: 45px; }
@@ -34,6 +34,7 @@ nav {
     text-decoration: none; }
   nav .buttonTop {
     position: fixed;
+    text-align: center;
     padding: 25px 48px;
     background: transparent;
     font-size: 18px;
@@ -99,7 +100,7 @@ nav {
       margin: 0 auto; }
       @media only screen and (min-width: 1920px) {
         .wrapper header h1 {
-          font-size: 140px; } }
+          font-size: 134px; } }
   .wrapper .fa-angle-down {
     position: absolute;
     color: white;
@@ -140,6 +141,9 @@ nav {
   left: 18px;
   bottom: 44px;
   font-size: 20px; }
+  @media only screen and (min-width: 1920px) {
+    #iconsLeft {
+      bottom: 74px; } }
   #iconsLeft ul {
     list-style: none;
     padding-left: 0; }
@@ -264,6 +268,11 @@ nav {
     font-weight: bold;
     letter-spacing: .1em;
     color: #354F52; }
+    @media only screen and (min-width: 1920px) {
+      #fourSquareWrap h1 {
+        font-size: 75px;
+        width: 70%;
+        margin-bottom: 10px; } }
   #fourSquareWrap hr {
     border-top: 3px solid dimgrey;
     width: 72%; }
@@ -273,6 +282,11 @@ nav {
     text-align: center;
     font-size: 25px;
     color: #333333; }
+    @media only screen and (min-width: 1920px) {
+      #fourSquareWrap p {
+        font-size: 27px;
+        margin-top: 30px;
+        width: 90%; } }
 
 .recentTitle {
   margin: 0 18px 0 18px;
