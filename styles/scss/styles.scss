@@ -105,7 +105,9 @@ nav {
     cursor: pointer;
     @include transition(all 0.3s ease-in-out);
     @include bp-xlg {
-      
+      padding: 0;
+      width: 100px;
+      height: 50px;
     }
     @include bp-md {
       display: none !important;
@@ -205,7 +207,7 @@ nav {
   bottom: 44px;
   font-size: 20px;
   @include bp-xlg {
-    bottom: 74px;
+    bottom: 84px;
   }
   ul {
     list-style: none;
@@ -319,6 +321,9 @@ nav {
     background: black;
     height: 500px;
     padding: 0;
+    @include bp-xlg {
+      height: 550px;
+    }
     img {
       min-width: 100%;
       min-height: 100%;
@@ -337,7 +342,7 @@ nav {
     @include bp-xlg {
       font-size: 75px;
       width: 70%;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
   }
   hr {
@@ -352,7 +357,7 @@ nav {
     color: $dark-grey-accent;
     @include bp-xlg {
       font-size: 27px;
-      margin-top: 30px;
+      margin-top: 50px;
       width: 90%;
     }
   }
@@ -396,6 +401,9 @@ nav {
   padding: 0;
   position: relative;
   height: 500px;
+  @include bp-xlg {
+    height: 550px;
+  }
   img {
     min-width: 100%;
     min-height: 100%;
@@ -480,7 +488,9 @@ footer {
     .footerBrand {
       float: left;
       padding: 60px 30px 110px 130px;
-      
+      @include bp-xlg {
+        padding: 60px 30px 110px 170px;
+      }
       h1 {
         font-size: 60px;
         font-weight: bold;

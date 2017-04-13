@@ -48,6 +48,11 @@ nav {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
+    @media only screen and (min-width: 1920px) {
+      nav .buttonTop {
+        padding: 0;
+        width: 100px;
+        height: 50px; } }
     @media only screen and (max-width: 1024px) {
       nav .buttonTop {
         display: none !important; } }
@@ -143,7 +148,7 @@ nav {
   font-size: 20px; }
   @media only screen and (min-width: 1920px) {
     #iconsLeft {
-      bottom: 74px; } }
+      bottom: 84px; } }
   #iconsLeft ul {
     list-style: none;
     padding-left: 0; }
@@ -255,6 +260,9 @@ nav {
     background: black;
     height: 500px;
     padding: 0; }
+    @media only screen and (min-width: 1920px) {
+      #fourSquareWrap .imageRight {
+        height: 550px; } }
     #fourSquareWrap .imageRight img {
       min-width: 100%;
       min-height: 100%;
@@ -272,7 +280,7 @@ nav {
       #fourSquareWrap h1 {
         font-size: 75px;
         width: 70%;
-        margin-bottom: 10px; } }
+        margin-bottom: 20px; } }
   #fourSquareWrap hr {
     border-top: 3px solid dimgrey;
     width: 72%; }
@@ -285,7 +293,7 @@ nav {
     @media only screen and (min-width: 1920px) {
       #fourSquareWrap p {
         font-size: 27px;
-        margin-top: 30px;
+        margin-top: 50px;
         width: 90%; } }
 
 .recentTitle {
@@ -323,6 +331,9 @@ nav {
   padding: 0;
   position: relative;
   height: 500px; }
+  @media only screen and (min-width: 1920px) {
+    .articles {
+      height: 550px; } }
   .articles img {
     min-width: 100%;
     min-height: 100%;
@@ -405,6 +416,9 @@ footer {
   footer .footerBrand {
     float: left;
     padding: 60px 30px 110px 130px; }
+    @media only screen and (min-width: 1920px) {
+      footer .footerBrand {
+        padding: 60px 30px 110px 170px; } }
     footer .footerBrand h1 {
       font-size: 60px;
       font-weight: bold; }
