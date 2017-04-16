@@ -65,7 +65,7 @@ body, html {
   box-sizing: border-box;
 }
 
-.container-fluid {
+.container-fluid, .container {
   margin: 0;
   padding: 0;
   .row {
@@ -360,6 +360,9 @@ nav {
   margin: 18px 18px 0 18px;
   background: $light-grey-accent;
   padding: 0;
+  @include bp-sm {
+    margin: 0;
+  }
   .imageRight {
     background: black;
     height: 500px;
@@ -388,6 +391,9 @@ nav {
       margin-bottom: 45px;
       margin-top: 85px;
     }
+    @include bp-sm {
+      margin-top: 50px;
+    }
   }
   hr {
     border-top: 3px solid dimgrey;
@@ -403,6 +409,9 @@ nav {
       font-size: 27px;
       margin-top: 30px;
       width: 90%;
+    }
+    @include bp-sm {
+      margin-bottom: 50px;
     }
   }
 }
@@ -555,9 +564,17 @@ footer {
       @include bp-xlg {
         padding: 60px 30px 110px 170px;
       }
+      @include bp-sm {
+        padding: 10px 0 60px 0;
+        width: 100%;
+        text-align: center;
+      }
       h1 {
         font-size: 60px;
         font-weight: bold;
+        @include bp-sm {
+          font-size: 40px;
+        }
       }
       h4 {
         font-size: 18px;
@@ -572,6 +589,12 @@ footer {
       padding: 60px;
       @include bp-xlg {
         padding-left: 80px;
+      }
+      @include bp-sm {
+        display: none;
+      }
+      ul {
+        padding: 0;
       }
       li {
         list-style: none;

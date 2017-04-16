@@ -10,14 +10,14 @@ body, html {
 *, *::before, *::after {
   box-sizing: border-box; }
 
-.container-fluid {
+.container-fluid, .container {
   margin: 0;
   padding: 0; }
-  .container-fluid .row {
+  .container-fluid .row, .container .row {
     margin: 0 18px 0 18px;
     padding: 0; }
     @media only screen and (max-width: 768px) {
-      .container-fluid .row {
+      .container-fluid .row, .container .row {
         margin: 0; } }
 
 nav {
@@ -296,6 +296,9 @@ nav {
   margin: 18px 18px 0 18px;
   background: #eaeaea;
   padding: 0; }
+  @media only screen and (max-width: 768px) {
+    #fourSquareWrap {
+      margin: 0; } }
   #fourSquareWrap .imageRight {
     background: black;
     height: 500px;
@@ -322,6 +325,9 @@ nav {
         width: 70%;
         margin-bottom: 45px;
         margin-top: 85px; } }
+    @media only screen and (max-width: 768px) {
+      #fourSquareWrap h1 {
+        margin-top: 50px; } }
   #fourSquareWrap hr {
     border-top: 3px solid dimgrey;
     width: 72%; }
@@ -336,6 +342,9 @@ nav {
         font-size: 27px;
         margin-top: 30px;
         width: 90%; } }
+    @media only screen and (max-width: 768px) {
+      #fourSquareWrap p {
+        margin-bottom: 50px; } }
 
 .recentTitle {
   margin: 0 18px 0 18px;
@@ -480,9 +489,17 @@ footer {
     @media only screen and (min-width: 1920px) {
       footer .footerBrand {
         padding: 60px 30px 110px 170px; } }
+    @media only screen and (max-width: 768px) {
+      footer .footerBrand {
+        padding: 10px 0 60px 0;
+        width: 100%;
+        text-align: center; } }
     footer .footerBrand h1 {
       font-size: 60px;
       font-weight: bold; }
+      @media only screen and (max-width: 768px) {
+        footer .footerBrand h1 {
+          font-size: 40px; } }
     footer .footerBrand h4 {
       font-size: 18px;
       padding-left: 5px;
@@ -495,6 +512,11 @@ footer {
     @media only screen and (min-width: 1920px) {
       footer .footerMenu {
         padding-left: 80px; } }
+    @media only screen and (max-width: 768px) {
+      footer .footerMenu {
+        display: none; } }
+    footer .footerMenu ul {
+      padding: 0; }
     footer .footerMenu li {
       list-style: none;
       color: #cecece; }
