@@ -365,7 +365,7 @@ nav {
   }
   .imageRight {
     background: black;
-    height: 500px;
+    height: 450px;
     padding: 0;
     @include bp-xlg {
       height: 550px;
@@ -425,8 +425,8 @@ nav {
   align-items: center;
   background-attachment: fixed;
   padding: 0;
-  border-top: 5px solid $white-smoke-background;
-  border-bottom: 5px solid $white-smoke-background;
+  border-top: 2px solid $white-smoke-background;
+  border-bottom: 2px solid $white-smoke-background;
   color: white;
   position: relative;
   @include bp-sm {
@@ -558,6 +558,9 @@ footer {
     position: relative;
     z-index: -1;
     color: white;
+    @include bp-sm {
+      margin: 0;
+    }
     .footerBrand {
       float: left;
       padding: 60px 30px 110px 130px;
@@ -599,6 +602,7 @@ footer {
       li {
         list-style: none;
         color: $subtitles-grey;
+        cursor: pointer;
         &:first-child {
           font-weight: bold;
           color: white;

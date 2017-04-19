@@ -301,7 +301,7 @@ nav {
       margin: 0; } }
   #fourSquareWrap .imageRight {
     background: black;
-    height: 500px;
+    height: 450px;
     padding: 0; }
     @media only screen and (min-width: 1920px) {
       #fourSquareWrap .imageRight {
@@ -355,8 +355,8 @@ nav {
   align-items: center;
   background-attachment: fixed;
   padding: 0;
-  border-top: 5px solid #f4f4f4;
-  border-bottom: 5px solid #f4f4f4;
+  border-top: 2px solid #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
   color: white;
   position: relative; }
   @media only screen and (max-width: 768px) {
@@ -483,6 +483,9 @@ footer {
   position: relative;
   z-index: -1;
   color: white; }
+  @media only screen and (max-width: 768px) {
+    footer {
+      margin: 0; } }
   footer .footerBrand {
     float: left;
     padding: 60px 30px 110px 130px; }
@@ -519,7 +522,8 @@ footer {
       padding: 0; }
     footer .footerMenu li {
       list-style: none;
-      color: #cecece; }
+      color: #cecece;
+      cursor: pointer; }
       footer .footerMenu li:first-child {
         font-weight: bold;
         color: white; }
