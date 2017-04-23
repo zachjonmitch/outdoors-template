@@ -10,6 +10,16 @@ body, html {
 *, *::before, *::after {
   box-sizing: border-box; }
 
+a {
+  color: white;
+  text-decoration: none; }
+  a:hover {
+    color: white;
+    text-decoration: none; }
+  a:visited {
+    color: white !important;
+    text-decoration: none !important; }
+
 .container-fluid, .container {
   margin: 0;
   padding: 0; }
