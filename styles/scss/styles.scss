@@ -215,8 +215,9 @@ nav {
     display: block;
     top: 28px;
     left: 28px;
-    font-size: 28px;
+    font-size: 22px;
     opacity: .7;
+    padding: 12px;
   }
 }
 
@@ -275,8 +276,8 @@ nav {
 .hamburgerMenu {
   background: $light-green-primary;
   position: fixed;
-  font-size: 25px;
-  padding: 15px;
+  font-size: 21px;
+  padding: 12px;
   top: 28px;
   right: 28px;
   display: none;
