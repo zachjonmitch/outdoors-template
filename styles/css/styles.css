@@ -111,25 +111,30 @@ nav {
     transition: all 0.3s ease-in-out; }
   .wrapper header {
     position: absolute;
-    color: white; }
+    color: white;
+    text-align: center; }
     .wrapper header h1 {
       text-align: center;
       font-size: 110px;
       font-weight: bold;
       width: 70%;
       letter-spacing: .1em;
-      margin: 0 auto; }
+      margin: 0 auto;
+      text-align: center; }
       @media only screen and (min-width: 1920px) {
         .wrapper header h1 {
           font-size: 134px; } }
       @media only screen and (max-width: 768px) {
         .wrapper header h1 {
-          font-size: 100px; } }
+          font-size: 60px; } }
   .wrapper .fa-angle-down {
     position: absolute;
     color: white;
     font-size: 70px;
     bottom: 0; }
+    @media only screen and (max-width: 768px) {
+      .wrapper .fa-angle-down {
+        font-size: 45px; } }
 
 .brandLeft {
   position: fixed;
@@ -289,7 +294,8 @@ nav {
     @media only screen and (max-width: 768px) {
       #aboutWrapper h1 {
         width: 85%;
-        margin: 10px auto; } }
+        margin: 10px auto;
+        font-size: 45px; } }
   #aboutWrapper p {
     font-size: 23px;
     width: 70%;
@@ -298,7 +304,8 @@ nav {
     @media only screen and (max-width: 768px) {
       #aboutWrapper p {
         width: 90%;
-        padding-bottom: 10px; } }
+        padding-bottom: 10px;
+        font-size: 19px; } }
 
 #fourSquareWrap {
   position: relative;
@@ -316,6 +323,9 @@ nav {
     @media only screen and (min-width: 1920px) {
       #fourSquareWrap .imageRight {
         height: 550px; } }
+    @media only screen and (max-width: 768px) {
+      #fourSquareWrap .imageRight {
+        height: 300px; } }
     #fourSquareWrap .imageRight img {
       min-width: 100%;
       min-height: 100%;
@@ -337,7 +347,8 @@ nav {
         margin-top: 85px; } }
     @media only screen and (max-width: 768px) {
       #fourSquareWrap h1 {
-        margin-top: 50px; } }
+        margin-top: 50px;
+        font-size: 45px; } }
   #fourSquareWrap hr {
     border-top: 3px solid dimgrey;
     width: 72%; }
@@ -354,7 +365,8 @@ nav {
         width: 90%; } }
     @media only screen and (max-width: 768px) {
       #fourSquareWrap p {
-        margin-bottom: 50px; } }
+        margin-bottom: 50px;
+        font-size: 22px; } }
 
 .recentTitle {
   margin: 0 18px 0 18px;
@@ -382,6 +394,9 @@ nav {
     border-bottom: 2px dashed white;
     padding: 20px;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .recentTitle h1 {
+        font-size: 50px; } }
   .recentTitle .fa {
     position: absolute;
     text-align: center;
@@ -400,7 +415,7 @@ nav {
       height: 550px; } }
   @media only screen and (max-width: 768px) {
     .articles {
-      height: 450px; } }
+      height: 300px; } }
   .articles img {
     min-width: 100%;
     min-height: 100%;
@@ -446,7 +461,7 @@ nav {
   @media only screen and (max-width: 768px) {
     #subscribe {
       margin: 0;
-      height: 420px; } }
+      height: 450px; } }
   #subscribe h1 {
     font-size: 50px;
     font-weight: bold;
@@ -455,17 +470,23 @@ nav {
     color: #354F52; }
     @media only screen and (max-width: 768px) {
       #subscribe h1 {
-        font-size: 50px;
+        font-size: 45px;
         width: 80%;
         margin: 50px auto 0 auto; } }
   #subscribe h3 {
     text-align: center;
     margin-bottom: 40px; }
+    @media only screen and (max-width: 768px) {
+      #subscribe h3 {
+        font-size: 22px; } }
   #subscribe input {
     padding: 12px;
     width: 400px;
     background: white;
     border: 1px solid #333333; }
+    @media only screen and (max-width: 768px) {
+      #subscribe input {
+        width: 300px; } }
 
 button {
   padding: 12px;
